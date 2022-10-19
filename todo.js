@@ -28,6 +28,8 @@ chucNangChecked();
 function deleteTask() {
     // tạo thẻ span
     let span = document.createElement("span");
+    // gắn class close cho span
+    span.classList.add("close");
     // tạo text "x"
     let spanText = document.createTextNode(" x");
     span.appendChild(spanText);
