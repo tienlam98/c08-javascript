@@ -26,9 +26,19 @@ function newElement() {
 chucNangChecked();
 
 function deleteTask() {
-    let closebtn = document.createElement("span");
-    let closeTextNode = document.createTextNode("x");
-    closebtn.appendChild(closeTextNode);
+    // tạo thẻ span
+    let span = document.createElement("span");
+    // tạo text "x"
+    let spanText = document.createTextNode("x");
+    span.appendChild(spanText);
+    let li = document.getElementsByTagName("li");
+    let ul = document.getElementById("myUL");
+    let mangLi = ul.children;
+    for (let i = 0; i < mangLi.length; i++) {
+        li[i].appendChild(span);
+    }
+    // let closeTextNode = document.createTextNode("x");
+    // closebtn.appendChild(closeTextNode);
     
 }
 deleteTask();
