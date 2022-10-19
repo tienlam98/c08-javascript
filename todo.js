@@ -31,7 +31,7 @@ function deleteTask() {
     // gắn class close cho span
     span.classList.add("close");
     // tạo text "x"
-    let spanText = document.createTextNode(" x");
+    let spanText = document.createTextNode("x");
     span.appendChild(spanText);
     let li = document.getElementsByTagName("li");
     li[0].appendChild(span);
@@ -39,6 +39,12 @@ function deleteTask() {
     // let mangLi = ul.children;
     // for (let i = 0; i < mangLi.length; i++) {
     //     li[i].appendChild(span);
+    // }
+
+    //delete 
+    span.parentElement.parentElement.remove();
+    // li[i].onclick = function() {
+
     // }
     
 }
